@@ -97,3 +97,15 @@ ol{
     left: 18.5%;
     background-color: green;
 }
+
+@media(max-width: 768px){
+    .first{
+        display: block;
+    }
+    .second{
+        display: block;
+    }
+    .third{
+        display: block;
+    }
+}
