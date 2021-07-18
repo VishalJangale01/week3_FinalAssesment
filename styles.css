@@ -6,6 +6,11 @@ body{
     margin: 0;
 }
 
+h1{
+    text-align: center;
+    font-size: 1em;
+}
+
 .first{
     background-color: orange;
     height: 337.92px;
@@ -15,15 +20,19 @@ body{
 }
 
 .second{
+    position: absolute;
     background-color: orange;
     height: 337.92px;
     width: 30%;
+    margin-top: 2%;
     display: inline-block;
     margin-bottom : 2%;
 }
 
 
 .third{
+    position:absolute;
+    left: 65%;
     background-color: orange;
     height: 337.92px;
     width: 30%;
@@ -33,7 +42,7 @@ body{
 
 .sub_first{
     display: inline-block;
-    margin: 9%;
+    margin: 8%;
     background-color: green;
     height: 280px;
     width: 30%;
@@ -50,10 +59,12 @@ body{
 p{
     margin: 0%;
     padding: 2%;
+    font-size: 21px;
 }
 
 ol{
     margin: 0%;
+    font-size: 21px;
 }
 
 /* p.sub_second{
@@ -72,10 +83,10 @@ ol{
 
 .third2{
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     width: 40%;
     height: 140px;
-    left: 18.5%;
+    float: right;   
     background-color: green;
 }
 
@@ -94,18 +105,38 @@ ol{
     width: 40%;
     height: 140px;
     top: 15.5%;
-    left: 18.5%;
+    float: right;   
     background-color: green;
 }
 
 @media(max-width: 768px){
     .first{
+        position: static;
         display: block;
+        margin: auto;
+        margin-bottom: 3%;
     }
     .second{
+        position: static;
         display: block;
+        margin: 2%;
+        margin: auto;
+        margin-bottom: 3%;
     }
     .third{
+        position: static;
         display: block;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    p{
+        margin: 0%;
+        padding: 2%;
+        font-size: 10px
+    }
+    
+    ol{
+        margin: 0%;
+        font-size: 10px;
     }
 }
